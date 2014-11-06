@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+
+	<body>
+		<input value="Draw Line" onclick="DrawLine()" type="button">
+		<canvas id="myCanvas" height="200" />
+		<script>
+			function DrawLine(){
+				var canvas = document.getElementById('myCanvas');
+				var context = canvas.getContext('2d');
+
+				context.beginPath();
+				context.moveTo(100, 150);
+				context.lineTo(450, 50);
+				context.stroke();
+			}
+		</script>
+	</body>
+</html>
