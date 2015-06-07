@@ -77,4 +77,4 @@ function calculate(){
                             document.getElementsByName("precision")[0].value, 
                             document.getElementsByName("population")[0].value);
     Graph.print(ctx);
-}
+};
